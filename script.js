@@ -1,13 +1,13 @@
 function DownloadPDF() {
     const name = document.getElementById("Name").value;
-    const email = document.getElementById("Email").value;
+    const contato = document.getElementById("Contato").value;
     const summary = document.getElementById("Summary").value;
     const experience = document.getElementById("Experience").value;
     const training = document.getElementById("Training").value;
     const skills = document.getElementById("Skills").value;
 
     document.getElementById("NamePDF").textContent = name;
-    document.getElementById("EmailPDF").textContent = email;
+    document.getElementById("ContatoPDF").textContent = contato;
     document.getElementById("SummaryPDF").textContent = summary;
     document.getElementById("ExperiencePDF").textContent = experience;
     document.getElementById("TrainingPDF").textContent = training;
@@ -23,5 +23,5 @@ function DownloadPDF() {
         jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
     };
 
-    html2pdf().set(opt).from(content).save().then
+    html2pdf().set(opt).from(content).save();
 }
