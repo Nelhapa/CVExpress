@@ -1,0 +1,79 @@
+body {
+    background-color: rgb(35, 38, 41);
+    font-family: Arial, sans-serif;
+}
+
+#Principais {
+    color: white;
+    text-align: justify;
+    flex-direction: column;
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+textarea {
+    width: 250px;
+    resize: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: left;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+button {
+    margin: 10px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#PDF {
+    width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+#PDF h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+#PDF h2 {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #34495e;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+#PDF p {
+    margin: 5px 0 15px;
+    white-space: pre-line; 
+}
+
+#PDF hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Currículo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div id="Principais">
+        <h1 style="color: white;">Gerador de Currículo</h1>
+
+        <label>Nome:</label>
+        <textarea id="Name"></textarea>
+
+        <label>E-mail:</label>
+        <textarea id="Email"></textarea>
+
+        <label>Resumo:</label>
+        <textarea id="Summary"></textarea>
+
+        <label>Experiências:</label>
+        <textarea id="Experience"></textarea>
+
+        <label>Formação:</label>
+        <textarea id="Training"></textarea>
+
+        <label>Habilidades:</label>
+        <textarea id="Skills"></textarea>
+
+        <button onclick="DownloadPDF()">Gerar currículo</button>
+    </div>
+
+    <div id="PDF">
+        <h1 id="NamePDF"></h1>
+        <hr>
+        <h2>Resumo</h2>
+        <p id="SummaryPDF"></p>
+        <hr>
+        <h2>Experiências</h2>
+        <p id="ExperiencePDF"></p>
+        <hr>
+        <h2>Formação</h2>
+        <p id="TrainingPDF"></p>
+        <hr>
+        <h2>Habilidades</h2>
+        <p id="SkillsPDF"></p>
+        <hr>
+        <h2>Contato</h2>
+        <p><strong></strong> <span id="EmailPDF"></span></p>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
